@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AccountService } from '../shared/services/settings/account-settings.service';
 
 @Component({
   selector: 'app-pages',
@@ -7,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class PagesComponent implements OnInit {
-
-  constructor() { }
+  constructor(private accountService: AccountService) { }
 
   ngOnInit(): void {
+    this.accountService.setThemeColor();
   }
 
 }

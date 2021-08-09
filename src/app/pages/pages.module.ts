@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { GraphicsOneComponent } from './graphics-one/graphics-one.component';
 import { PagesComponent } from './pages.component';
 import { PagesRoutingModule } from './pages-routing.module';
+import { AccountSettingsComponent } from './account-setting/account-settings.component';
 
 
 
@@ -16,7 +17,8 @@ import { PagesRoutingModule } from './pages-routing.module';
     ProgressComponent,
     DashboardComponent,
     GraphicsOneComponent,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { PagesRoutingModule } from './pages-routing.module';
     ProgressComponent,
     DashboardComponent,
     GraphicsOneComponent,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent
   ]
 })
 export class PagesModule { }
